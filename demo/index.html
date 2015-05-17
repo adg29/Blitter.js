@@ -16,10 +16,22 @@
 
         <script>
             
+            var walkCycle = new Blitter({
+                width: 100,
+                height: 151,
+                resource: "images/walk-cycle.png",
+                autoplay: true,
+                frameRate: 10,
+                delay: 2000
+            });
+
+            document.body.appendChild( walkCycle.getContainer() );
+            
             var circleThingy = new Blitter({
                 width: 38,
                 height: 38,
                 resource: "images/loading-sprite.png",
+                autoplay: true,
                 frameRate: 33,
                 delay: 2000
             });
